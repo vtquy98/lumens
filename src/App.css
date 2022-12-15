@@ -1,38 +1,468 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: "Hellix";
+  src: url("../src/assets/fonts/Hellix-SemiBoldItalic.eot");
+  src: local("Hellix SemiBold Italic"), local("Hellix-SemiBoldItalic"),
+    url("../src/assets/fonts/Hellix-SemiBoldItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("../src/assets/fonts/Hellix-SemiBoldItalic.woff2") format("woff2"),
+    url("../src/assets/fonts/Hellix-SemiBoldItalic.woff") format("woff"),
+    url("../src/assets/fonts/Hellix-SemiBoldItalic.ttf") format("truetype");
+  font-weight: 600;
+  font-style: italic;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+  font-family: "Hellix";
+  src: url("../src/assets/fonts/Hellix-Regular.eot");
+  src: local("Hellix Regular"), local("Hellix-Regular"),
+    url("../src/assets/fonts/Hellix-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("../src/assets/fonts/Hellix-Regular.woff2") format("woff2"),
+    url("../src/assets/fonts/Hellix-Regular.woff") format("woff"),
+    url("../src/assets/fonts/Hellix-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@font-face {
+  font-family: "Hellix";
+  src: url("../src/assets/fonts/Hellix-LightItalic.eot");
+  src: local("Hellix Light Italic"), local("Hellix-LightItalic"),
+    url("../src/assets/fonts/Hellix-LightItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("../src/assets/fonts/Hellix-LightItalic.woff2") format("woff2"),
+    url("../src/assets/fonts/Hellix-LightItalic.woff") format("woff"),
+    url("../src/assets/fonts/Hellix-LightItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+@font-face {
+  font-family: "Hellix";
+  src: url("../src/assets/fonts/Hellix-MediumItalic.eot");
+  src: local("Hellix Medium Italic"), local("Hellix-MediumItalic"),
+    url("../src/assets/fonts/Hellix-MediumItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("../src/assets/fonts/Hellix-MediumItalic.woff2") format("woff2"),
+    url("../src/assets/fonts/Hellix-MediumItalic.woff") format("woff"),
+    url("../src/assets/fonts/Hellix-MediumItalic.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Hellix";
+  src: url("../src/assets/fonts/Hellix-BlackItalic.eot");
+  src: local("Hellix Black Italic"), local("Hellix-BlackItalic"),
+    url("../src/assets/fonts/Hellix-BlackItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("../src/assets/fonts/Hellix-BlackItalic.woff2") format("woff2"),
+    url("../src/assets/fonts/Hellix-BlackItalic.woff") format("woff"),
+    url("../src/assets/fonts/Hellix-BlackItalic.ttf") format("truetype");
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Hellix";
+  src: url("../src/assets/fonts/Hellix-RegularItalic.eot");
+  src: local("Hellix Regular Italic"), local("Hellix-RegularItalic"),
+    url("../src/assets/fonts/Hellix-RegularItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("../src/assets/fonts/Hellix-RegularItalic.woff2") format("woff2"),
+    url("../src/assets/fonts/Hellix-RegularItalic.woff") format("woff"),
+    url("../src/assets/fonts/Hellix-RegularItalic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Hellix";
+  src: url("../src/assets/fonts/Hellix-ExtraBoldItalic.eot");
+  src: local("Hellix ExtraBold Italic"), local("Hellix-ExtraBoldItalic"),
+    url("../src/assets/fonts/Hellix-ExtraBoldItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("../src/assets/fonts/Hellix-ExtraBoldItalic.woff2") format("woff2"),
+    url("../src/assets/fonts/Hellix-ExtraBoldItalic.woff") format("woff"),
+    url("../src/assets/fonts/Hellix-ExtraBoldItalic.ttf") format("truetype");
+  font-weight: 800;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Hellix";
+  src: url("../src/assets/fonts/Hellix-SemiBold.eot");
+  src: local("Hellix SemiBold"), local("Hellix-SemiBold"),
+    url("../src/assets/fonts/Hellix-SemiBold.eot?#iefix")
+      format("embedded-opentype"),
+    url("../src/assets/fonts/Hellix-SemiBold.woff2") format("woff2"),
+    url("../src/assets/fonts/Hellix-SemiBold.woff") format("woff"),
+    url("../src/assets/fonts/Hellix-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Hellix";
+  src: url("../src/assets/fonts/Hellix-BoldItalic.eot");
+  src: local("Hellix Bold Italic"), local("Hellix-BoldItalic"),
+    url("../src/assets/fonts/Hellix-BoldItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("../src/assets/fonts/Hellix-BoldItalic.woff2") format("woff2"),
+    url("../src/assets/fonts/Hellix-BoldItalic.woff") format("woff"),
+    url("../src/assets/fonts/Hellix-BoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Hellix";
+  src: url("../src/assets/fonts/Hellix-Light.eot");
+  src: local("Hellix Light"), local("Hellix-Light"),
+    url("../src/assets/fonts/Hellix-Light.eot?#iefix")
+      format("embedded-opentype"),
+    url("../src/assets/fonts/Hellix-Light.woff2") format("woff2"),
+    url("../src/assets/fonts/Hellix-Light.woff") format("woff"),
+    url("../src/assets/fonts/Hellix-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Hellix";
+  src: url("../src/assets/fonts/Hellix-Thin.eot");
+  src: local("Hellix Thin"), local("Hellix-Thin"),
+    url("../src/assets/fonts/Hellix-Thin.eot?#iefix")
+      format("embedded-opentype"),
+    url("../src/assets/fonts/Hellix-Thin.woff2") format("woff2"),
+    url("../src/assets/fonts/Hellix-Thin.woff") format("woff"),
+    url("../src/assets/fonts/Hellix-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Hellix";
+  src: url("../src/assets/fonts/Hellix-Bold.eot");
+  src: local("Hellix Bold"), local("Hellix-Bold"),
+    url("../src/assets/fonts/Hellix-Bold.eot?#iefix")
+      format("embedded-opentype"),
+    url("../src/assets/fonts/Hellix-Bold.woff2") format("woff2"),
+    url("../src/assets/fonts/Hellix-Bold.woff") format("woff"),
+    url("../src/assets/fonts/Hellix-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Hellix";
+  src: url("../src/assets/fonts/Hellix-ExtraBold.eot");
+  src: local("Hellix ExtraBold"), local("Hellix-ExtraBold"),
+    url("../src/assets/fonts/Hellix-ExtraBold.eot?#iefix")
+      format("embedded-opentype"),
+    url("../src/assets/fonts/Hellix-ExtraBold.woff2") format("woff2"),
+    url("../src/assets/fonts/Hellix-ExtraBold.woff") format("woff"),
+    url("../src/assets/fonts/Hellix-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Hellix";
+  src: url("../src/assets/fonts/Hellix-Black.eot");
+  src: local("Hellix Black"), local("Hellix-Black"),
+    url("../src/assets/fonts/Hellix-Black.eot?#iefix")
+      format("embedded-opentype"),
+    url("../src/assets/fonts/Hellix-Black.woff2") format("woff2"),
+    url("../src/assets/fonts/Hellix-Black.woff") format("woff"),
+    url("../src/assets/fonts/Hellix-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Hellix";
+  src: url("../src/assets/fonts/Hellix-ThinItalic.eot");
+  src: local("Hellix Thin Italic"), local("Hellix-ThinItalic"),
+    url("../src/assets/fonts/Hellix-ThinItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("../src/assets/fonts/Hellix-ThinItalic.woff2") format("woff2"),
+    url("../src/assets/fonts/Hellix-ThinItalic.woff") format("woff"),
+    url("../src/assets/fonts/Hellix-ThinItalic.ttf") format("truetype");
+  font-weight: 100;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Hellix";
+  src: url("../src/assets/fonts/Hellix-Medium.eot");
+  src: local("Hellix Medium"), local("Hellix-Medium"),
+    url("../src/assets/fonts/Hellix-Medium.eot?#iefix")
+      format("embedded-opentype"),
+    url("../src/assets/fonts/Hellix-Medium.woff2") format("woff2"),
+    url("../src/assets/fonts/Hellix-Medium.woff") format("woff"),
+    url("../src/assets/fonts/Hellix-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+body {
+  font-family: "Hellix", sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-weight: 400;
+  color: #333;
+  text-align: left;
+  background-color: #f2f2f2;
+}
+
+.container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  height: 100vh;
+  background-color: #f2f2f2;
+}
+
+.box {
+  width: 390px;
+  height: 100vh;
+  background-color: #fff;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 40px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.navigation {
+  position: absolute;
+  bottom: 0;
+  height: 96px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  border-top: 2px solid #e2e2ea;
+  background-color: #fff;
+  z-index: 2;
+}
+
+.bloc-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bloc-icon img {
+  position: relative;
+  width: 32px;
+}
+
+.header-container {
+  height: 428px;
+  background: #171725;
+}
+
+.header-content {
+  height: 100%;
+  padding: 60px 24px 16px 24px;
+}
+
+.back-icon {
+  width: 40px;
+  height: 40px;
+  background: #ffffff;
+  /* padding: 60px 0 16px 24px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 40px;
+  text-align: left;
+  margin-bottom: 8px;
+}
+
+h3 {
+  font-weight: 600;
+  line-height: 32px;
+  text-align: left;
+  margin-bottom: 0;
+  margin-top: 8px;
+}
+
+h4 {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: left;
+  margin-bottom: 8px;
+  margin-top: 0;
+}
+
+p {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.005em;
+  text-align: left;
+}
+
+.text-white {
+  color: #ffffff;
+}
+.text-gray {
+  color: #b5b5be;
+}
+.content {
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  z-index: 1;
+}
+.card {
+  box-shadow: 0px 12px 18px 0px rgba(23, 23, 37, 0.04);
+  border-radius: 8px;
+  border: 1px solid #fafafb;
+}
+
+.current-balance {
+  margin-top: 16px;
+  height: 380px;
+  background-color: white;
+  background-image: url("../src/assets/images/bg.svg");
+  padding: 24px;
+}
+
+.body-container {
+  margin-top: 260px;
+  padding-bottom: 96px;
+}
+
+.section-title {
+  padding: 0px 24px;
+}
+
+.product-card {
+  box-sizing: border-box;
+  width: 200px;
+  background: #ffffff;
+  margin: 12px;
+}
+
+.product-container {
+  display: flex;
+  width: 100%;
+  overflow: scroll;
+  padding: 16px 16px;
+}
+
+.product-container::-webkit-scrollbar {
+  display: none;
+}
+
+.card-content {
+  padding: 16px;
+}
+
+.card-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.005em;
+  color: #92929d;
+}
+
+.progress {
+  height: 5px;
+  background-color: #e2e2ea;
+  border-radius: 4px;
+  margin-top: 8px;
+  margin-bottom: 24px;
+}
+
+.progress-active {
+  height: 100%;
+  width: 190px;
+  background-color: #0062ff;
+  border-radius: 4px;
+}
+
+.balance {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 56px;
+  letter-spacing: -0.5px;
+  color: #171725;
+  margin-bottom: 24px;
+}
+
+.link {
+  margin: 24px 0px;
+  display: flex;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.005em;
+  color: #0062ff;
+  text-decoration: none;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  font-family: "Hellix";
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  width: 295px;
+  height: 60px;
+  background: #171725;
   color: white;
+  text-align: center;
+  border: none;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.muted-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: -0.5px;
+  color: #b5b5be;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.product-title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #0062ff;
+}
+
+.product-title-disable {
+  color: #696974;
+}
+
+.text-blue {
+  color: #0062ff;
 }
