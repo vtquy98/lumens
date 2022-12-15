@@ -363,9 +363,8 @@ p {
 
 .product-container {
   display: flex;
-  width: 100%;
   overflow: scroll;
-  padding: 16px 16px;
+  padding: 0 12px 24px 12px;
 }
 
 .product-container::-webkit-scrollbar {
@@ -374,6 +373,14 @@ p {
 
 .card-content {
   padding: 16px;
+}
+
+.product-image {
+  height: 100px;
+  width: 200px;
+  object-fit: cover;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
 }
 
 .card-text {

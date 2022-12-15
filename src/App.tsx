@@ -57,15 +57,7 @@ const RenderProduct = ({ items }: { items: Array<IProduct> }) => {
     <div className="product-container">
       {items.map((item, idx) => (
         <div className="card product-card" key={idx}>
-          <img
-            src={item.image}
-            alt={`item-${idx}`}
-            height={98}
-            width={200}
-            style={{
-              objectFit: "cover",
-            }}
-          />
+          <img src={item.image} alt={`item-${idx}`} className="product-image" />
           <div className="card-content">
             <h4
               className={
